@@ -1,0 +1,24 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* Icons */
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-chubby/css/uicons-solid-chubby.css');
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css');
+
+@import "tailwindcss";
+
+@theme {
+    --font-display: "Plus Jakarta Sans", "sans-serif";
+
+    --color-primary: #F1BD2C;
+    --color-secondary: #A40C0B;
+    --color-bgGray: #F8F8F8;
+    --color-textGray: #E6E6E6;
+    --color-textGrayDark: #A4A2A7;
+    --color-textDark: #2D3134;
+    --color-white: #FFFFFF;
+    --color-green: #31CF4A;
+}
+
