@@ -13,6 +13,10 @@ import PengaturanAkun from '@/pages/PengaturanAkun.vue';
 import PusatBantuan from '@/pages/PusatBantuan.vue';
 import Login from '@/pages/auth/Login.vue';
 import Daftar from '@/pages/auth/Daftar.vue';
+import HomeDashboard from '@/pages/admin/HomeDashboard.vue';
+import Menu from '@/pages/admin/Menu.vue';
+import Supplier from '@/pages/admin/Supplier.vue';
+import Pengguna from '@/pages/admin/Pengguna.vue';
 
 const routes = [
   { 
@@ -86,6 +90,44 @@ const routes = [
     name: 'Daftar', 
     component: Daftar,
     meta: { title: 'Daftar' }
+  },
+
+  // Admin
+  { 
+    path: '/admin/dashboard', 
+    name: 'HomeDashboard', 
+    component: HomeDashboard,
+    meta: {
+      title: 'Home',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/admin/menu', 
+    name: 'Menu', 
+    component: Menu,
+    meta: {
+      title: 'Menu',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/admin/supplier', 
+    name: 'Supplier', 
+    component: Supplier,
+    meta: {
+      title: 'Supplier',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/admin/pengguna', 
+    name: 'Pengguna', 
+    component: Pengguna,
+    meta: {
+      title: 'Pengguna',
+      isAdmin: true
+    }
   },
 ];
 
