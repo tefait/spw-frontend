@@ -17,6 +17,18 @@ import HomeDashboard from '@/pages/admin/HomeDashboard.vue';
 import Menu from '@/pages/admin/Menu.vue';
 import Supplier from '@/pages/admin/Supplier.vue';
 import Pengguna from '@/pages/admin/Pengguna.vue';
+import Laporan from '@/pages/admin/Laporan.vue';
+import Pengaturan from '@/pages/admin/Pengaturan.vue';
+import HomeKasir from '@/pages/kasir/HomeDashboard.vue';
+import Pesanan from '@/pages/kasir/Pesanan.vue';
+import BerhasilKasir from '@/pages/kasir/Berhasil.vue';
+import Riwayat from '@/pages/kasir/Riwayat.vue';
+import PengaturanKasir from '@/pages/kasir/Pengaturan.vue';
+import HomePelayan from '@/pages/pelayan/HomeDashboard.vue';
+import SupplierPelayan from '@/pages/pelayan/Supplier.vue';
+import PengaturanPelayan from '@/pages/pelayan/Pengaturan.vue';
+
+import UnderConstruction from '@/pages/UnderConstruction.vue';
 
 const routes = [
   { 
@@ -126,6 +138,111 @@ const routes = [
     component: Pengguna,
     meta: {
       title: 'Pengguna',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/admin/laporan', 
+    name: 'Laporan', 
+    component: Laporan,
+    meta: {
+      title: 'Laporan',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/admin/pengaturan', 
+    name: 'Pengaturan', 
+    component: Pengaturan,
+    meta: {
+      title: 'Pengaturan',
+      isAdmin: true
+    }
+  },
+
+  // Kasir
+  { 
+    path: '/kasir/dashboard', 
+    name: 'HomeKasir', 
+    component: HomeKasir,
+    meta: {
+      title: 'Home',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/kasir/pesanan', 
+    name: 'Pesanan', 
+    component: Pesanan,
+    meta: {
+      title: 'Pesanan',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/kasir/berhasil', 
+    name: 'BerhasilKasir', 
+    component: BerhasilKasir,
+    meta: {
+      title: 'Berhasil',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/kasir/riwayat', 
+    name: 'Riwayat', 
+    component: Riwayat,
+    meta: {
+      title: 'Riwayat',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/kasir/pengaturan', 
+    name: 'PengaturanKasir', 
+    component: PengaturanKasir,
+    meta: {
+      title: 'Pengaturan',
+      isAdmin: true
+    }
+  },
+
+  // Pelayan
+  { 
+    path: '/pelayan/dashboard', 
+    name: 'HomePelayan', 
+    component: HomePelayan,
+    meta: {
+      title: 'Home',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/pelayan/supplier', 
+    name: 'SupplierPelayan', 
+    component: SupplierPelayan,
+    meta: {
+      title: 'Supplier',
+      isAdmin: true
+    }
+  },
+  { 
+    path: '/pelayan/pengaturan', 
+    name: 'PengaturanPelayan', 
+    component: PengaturanPelayan,
+    meta: {
+      title: 'Pengaturan',
+      isAdmin: true
+    }
+  },
+
+  // Under Construction
+  { 
+    path: '/underconstruction', 
+    name: 'UnderConstruction', 
+    component: UnderConstruction,
+    meta: {
+      title: 'Under Construction',
       isAdmin: true
     }
   },
